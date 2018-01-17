@@ -24,14 +24,22 @@ h2 {
 
 img {
   float: left;
+  margin-right: 23px;
+  margin-bottom: 23px;
 }
 
 .first-article {
+  padding-bottom: 50px;
   border-bottom-style: solid;
   border-bottom-color: #dedbdb;
   border-bottom-width: 2px;
 }
+
+.first-article h2 {
+  margin-bottom: 50px;
+}
 .agency-profile {
+  margin-right: 57px;
   display: inline-block;
   vertical-align: top;
   width: 70%;
@@ -46,6 +54,11 @@ img {
 
 .principles-list li {
   counter-increment: principles;
+  margin-bottom: 30px;
+}
+
+.principles-list li:last-child {
+  margin-bottom: 0px;
 }
 .principles-list li p {
   padding-left: 35px;
@@ -66,14 +79,35 @@ img {
   border-radius: 25px;
 }
 
+.second-article {
+  padding-top: 57px;
+}
+
 .offer {
   display: inline-block;
   width: 70%;
   vertical-align: top;
+  margin-right: 55px;
+}
+
+.offer h2 {
+  margin-bottom: 67px;
 }
 
 .offer ul {
   column-count: 2;
+}
+
+.offer li {
+  margin-bottom: 26px;
+}
+
+.offer li:last-child {
+  margin-bottom: 0px;
+}
+
+.offer p {
+  margin-bottom: 33px;
 }
 
 .quote {
@@ -89,12 +123,17 @@ img {
   border-color: #dfdcdc;
   padding: 23px;
   border-radius: 4px;
+  margin-bottom: 28px;
 }
 
+.quote h2 {
+  margin-bottom: 26px;
+}
 .quote h4 {
   text-transform: capitalize;
   text-align: center;
   color: #263555;
+  margin-bottom: 20px;
 }
 
 .quote h5 {
@@ -109,6 +148,7 @@ img {
 .principles h3 {
   color: #263555;
   font-size: 15px;
+  margin-bottom: 16px;
 }
 
 p {
