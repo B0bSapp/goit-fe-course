@@ -14,13 +14,13 @@ body {
 
 .wrapper {
   margin: auto;
-  width: 480px;
   padding: 35px;
+  padding-top: 60px;
+  width: 480px;  
   background-color: white;
 }
 
-.profile {
-  margin-top: 25px;
+.profile {  
   margin-bottom: 50px;
 }
 
