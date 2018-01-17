@@ -1,0 +1,134 @@
+body {
+  background: url(../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1024px;
+  padding: 60px;
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+h2 {
+  font-family: "Pathway Gothic One", sans-serif;
+  text-transform: uppercase;
+  color: #263555;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+img {
+  float: left;
+}
+
+.first-article {
+  border-bottom-style: solid;
+  border-bottom-color: #dedbdb;
+  border-bottom-width: 2px;
+}
+.agency-profile {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.principles {
+  display: inline-block;
+  vertical-align: top;
+  counter-reset: principles;
+  width: 20%;
+}
+
+.principles-list li {
+  counter-increment: principles;
+}
+.principles-list li p {
+  padding-left: 35px;
+}
+.principles-list li h3::before {
+  margin-right: 10px;
+  display: inline-block;
+  content: counter(principles);
+  background-color: #38afe5;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #65a2bc;
+  border-radius: 25px;
+}
+
+.offer {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+}
+
+.offer ul {
+  column-count: 2;
+}
+
+.quote {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.quote p {
+  background-color: #fcfafa;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #dfdcdc;
+  padding: 23px;
+  border-radius: 4px;
+}
+
+.quote h4 {
+  text-transform: capitalize;
+  text-align: center;
+  color: #263555;
+}
+
+.quote h5 {
+  color: #4e5050;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 13px;
+}
+
+.offer ul li,
+.annotation,
+.principles h3 {
+  color: #263555;
+  font-size: 15px;
+}
+
+p {
+  color: #4e5050;
+  font-size: 13px;
+}
+
+.offer li::before {
+  content: "\2192";
+  color: #38afe5;
+  margin-right: 12px;
+}
+
+.quote p::before,
+.quote p::after {
+  content: "\0022";
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
