@@ -1,0 +1,278 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 110px;
+  position: relative;
+  padding-left: 100px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 60px;
+  font-family: var(--logo-font);
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  background-color: var(--default-background-color);
+  width: 138px;
+  height: 138px;
+  border-radius: 138px;
+  text-align: center;
+  line-height: 138px;
+  position: relative;
+  transform: translate(320px, 80px);
+  text-decoration: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 23.333px;
+  font-family: var(--content-font);
+  color: var(--light-font-content-color);
+  text-transform: uppercase;
+  display: block;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 57px;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-item:nth-child(3) {
+  margin-right: 240px;
+}
+
+.menu-item:hover > a {
+  color: var(--main-font-color);
+}
+
+.menu-item:hover > .submenu {
+  display: inline-block;
+  color: var(--main-font-color);
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  background-color: var(--default-background-color);
+  border-radius: 3px;
+  transform: translateX(-5px);
+}
+
+.submenu::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid var(--default-background-color);
+  top: -3px;
+  left: 50%;
+  transform: translateX(-2px);
+}
+
+.submenu-item {
+  text-align: center;
+  margin: 8px;
+}
+
+.submenu-item a {
+  text-decoration: none;
+  font-size: 16.667px;
+  font-family: var(--content-font);
+  color: var(--submenu-color);
+  text-transform: uppercase;
+  display: block;
+}
+
+main {
+  background-color: var(--default-background-color);
+  padding: 60px;
+}
+
+.gallery-section {
+  margin-bottom: 55px;
+}
+
+.carousel {
+  position: relative;
+  margin: auto;
+}
+
+.slick-arrow {
+  display: inline-block;
+  background-color: var(--controls-color);
+  width: 45px;
+  height: 90px;
+  border: 0;
+  position: absolute;
+  z-index: 10;
+  transform: translate(36px, -126px);
+}
+
+.slick-prev {
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 90px;
+  text-align: right;
+  top: 100%;
+}
+
+.slick-prev:hover {
+  background-color: var(--controls-on-hover-color);
+}
+
+.slick-prev::before {
+  content: "\2190";
+  color: var(--light-font-content-color);
+  line-height: 90px;
+  margin-right: 6px;
+}
+
+.slick-next {
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+  left: 45px;
+}
+
+.slick-next:hover {
+  background-color: var(--controls-on-hover-color);
+}
+
+.slick-next::before {
+  content: "\2192";
+  color: var(--light-font-content-color);
+  line-height: 90px;
+  margin-left: 6px;
+}
+
+.carousel-entity > img {
+  display: block;
+  width: 100%;
+  height: 577px;
+  object-fit: cover;
+}
+
+.first-line {
+  display: inline-block;
+  font-size: 23.333px;
+  font-family: var(--content-font);
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  background-color: var(--default-background-color);
+  position: absolute;
+  padding: 16px;
+  transform: translateY(-300px);
+}
+
+.second-line {
+  display: inline-block;
+  font-size: 36px;
+  font-family: var(--content-font);
+  color: var(--light-font-content-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  background-color: var(--controls-color);
+  position: absolute;
+  padding: 15px;
+  transform: translateY(-241px);
+}
+
+h2 {
+  font-size: 31.667px;
+  font-family: var(--content-font);
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 47px;
+}
+
+.top-destination {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+}
+
+h3 {
+  font-size: 31.667px;
+  font-family: var(--content-font);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 19px;
+  margin-bottom: 23px;
+}
+
+.top-destination > img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.top-destination:hover > .destination-description {
+  display: block;
+}
+
+.destination-description {
+  display: none;
+  position: absolute;
+  background-color: var(--article-background-color);
+  color: var(--light-font-content-color);
+  font-size: 13px;
+  font-family: "Arial";
+  line-height: 1.462;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.details {
+  position: absolute;
+  text-transform: capitalize;
+  font-size: 12.5px;
+  font-family: "Arial";
+  line-height: 1.52;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  bottom: 19px;
+  right: 12px;
+}
+
+.to-top {
+  position: fixed;
+  display: block;
+  background: url(../images/apple-keyboard-control.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--controls-color);
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  bottom: 23px;
+  right: 12px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+}

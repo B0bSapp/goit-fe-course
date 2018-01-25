@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework-5</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a class="logo" href="#">journey</a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">about</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="#">agency</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">news</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">team</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">tours</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="gallery-section">
+                <div class="carousel">
+                    <div class="carousel-entity">
+                        <img src="images/seashore.jpg" alt="seashore">
+                    </div>
+                    <div class="carousel-entity">
+                        <img src="images/barcelona.jpg" alt="barcelona">
+                    </div>
+                    <div class="carousel-entity">
+                        <img src="images/rome.jpg" alt="rome">
+                    </div>
+                    <div class="carousel-entity">
+                        <img src="images/venice.jpg" alt="venice">
+                    </div>
+                </div>
+                <p class="first-line">there are plenty of places</p>
+                <p class="second-line">that are worth seeing</p>
+            </section>
+            <section>
+                <h2>top destinations</h2>
+                <ul class="destinations-list">
+                    <li class="top-destination">
+                        <article class="destination-description">
+                            <h3>venice</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto at modi suscipit, pariatur
+                                odio!
+                            </p>
+                            <button class="details">details</button>
+                        </article>
+                        <img src="images/venice_destination.jpg" alt="venice">
+                    </li>
+                    <li class="top-destination">
+                        <article class="destination-description">
+                            <h3>new york</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit vero repudiandae, natus possimus
+                                harum dolorum.</p>
+                            <button class="details">details</button>
+                        </article>
+                        <img src="images/usa_destination.jpg" alt="usa">
+                    </li>
+                    <li class="top-destination">
+                        <article class="destination-description">
+                            <h3>paris</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, aut! Sit, magni.</p>
+                            <button class="details">details</button>
+                        </article>
+                        <img src="images/paris_destination.jpg" alt="paris">
+                    </li>
+                </ul>
+            </section>
+            <a href="#" class="to-top"></a>
+        </main>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                nextArrow: '<i class="slick-next"></i>',
+                prevArrow: '<i class="slick-prev"></i>'
+            });
+        });
+    </script>
+</body>
+
+</html>
