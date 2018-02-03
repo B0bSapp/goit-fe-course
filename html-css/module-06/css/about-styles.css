@@ -1,56 +1,40 @@
-body {
-  background: url(../images/bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
+.main {
+  background-color: var(--default-background-color);
+  padding: 120px 62px 90px 62px;
 }
 
-.wrapper {
-  margin: auto;
-  width: 1024px;
-  padding: 60px;
-  padding-top: 120px;
-  background-color: #fff;
-}
-
-h2 {
-  font-family: "Pathway Gothic One", sans-serif;
-  text-transform: uppercase;
-  color: #263555;
-  font-size: 26.667px;
-  font-weight: bold;
-}
-
-img {
+.article-image {
   float: left;
   margin-right: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .first-article {
+  display: flex;
   padding-bottom: 50px;
   border-bottom-style: solid;
   border-bottom-color: #dedbdb;
   border-bottom-width: 2px;
 }
 
-.first-article h2 {
-  margin-bottom: 50px;
-}
-
 .agency-profile {
-  display: inline-block;
-  vertical-align: top;
-  width: 70%;
+  flex: 0 0 70%;
+  margin-right: 55px;
 }
 
 .principles {
-  display: inline-block;
-  vertical-align: top;
   counter-reset: principles;
-  width: 21%;
-  margin-left: calc(5% - 4px);
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .principles-content {
@@ -61,9 +45,11 @@ img {
 .principles-content:last-child {
   margin-bottom: 0px;
 }
+
 .principles-content p {
   padding-left: 35px;
 }
+
 .principles-content h3::before {
   margin-right: 10px;
   display: inline-block;
@@ -82,12 +68,12 @@ img {
 
 .second-article {
   padding-top: 57px;
+  display: flex;
 }
 
 .offer {
-  display: inline-block;
-  width: 70%;
-  vertical-align: top;
+  flex: 0 0 70%;
+  margin-right: 55px;
 }
 
 .offer h2 {
@@ -95,14 +81,18 @@ img {
 }
 
 .offer-list {
-  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .offer-content {
-  margin-bottom: 26px;
+  flex: 0 0 50%;
+  color: var(--secondary-main-font-color);
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
-.offer-content:last-child {
+.offer-content:nth-last-child(-n + 2) {
   margin-bottom: 0px;
 }
 
@@ -116,14 +106,15 @@ img {
   margin-bottom: 33px;
 }
 
-.quote {
-  display: inline-block;
-  width: 20%;
-  vertical-align: top;
-  margin-left: calc(5% - 4px);
+.annotation,
+.principles-content {
+  color: var(--secondary-main-font-color);
+  font-size: 15px;
+  margin-bottom: 16px;
 }
 
-.quote p {
+.quote-container {
+  position: relative;
   font-size: 15px;
   background-color: #fcfafa;
   border-style: solid;
@@ -131,7 +122,33 @@ img {
   border-color: #dfdcdc;
   padding: 23px;
   border-radius: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 60px;
+}
+
+.quote-container::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #dfdcdc;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-container::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fcfafa;
+  top: calc(100% - 3px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .quote-header {
@@ -152,26 +169,20 @@ img {
   font-size: 13px;
 }
 
-.offer-content,
-.annotation,
-.principles-content {
-  color: #263555;
-  font-size: 15px;
-  margin-bottom: 16px;
+.quote span::before,
+.quote span::after {
+  content: "\0022";
+}
+
+.main-footer {
+  background-color: #30455b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 130px;
 }
 
 p {
   color: #4e5050;
   font-size: 13px;
-}
-
-.quote p::before,
-.quote p::after {
-  content: "\0022";
-}
-
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
 }
