@@ -1,6 +1,6 @@
-@import url("/module-07/css/reset.css");
-@import url("/module-07/css/variables.css");
-@import url("/module-07/css/fonts.css");
+@import url("../css/reset.css");
+@import url("../css/variables.css");
+@import url("../css/fonts.css");
 
 body {
   font-size: 16px;
@@ -206,7 +206,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--footer-color);
-  background-image: url("/module-07/images/bg-map.png");
+  background-image: url("../images/bg-map.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   min-height: 40.875rem;
