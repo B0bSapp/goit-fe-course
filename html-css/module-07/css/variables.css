@@ -1,0 +1,15 @@
+:root {
+  --footer-color: #222222;
+  --default-body-color: #333333;
+  --default-background-color: #ffffff;
+  --secondary-font-name: Montserrat;
+  --description-font-name: "Roboto Slab";
+  --light-font-color: #ffffff;
+  --dark-font-color: #222222;
+  --secondary-dark-font-color: #777777;
+  --yellow-color: #fed136;
+  --dark-yellow-color: #ac8d1f;
+  --form-font-color: #bbbbbb;
+  --pretty-font-name: Wisdom;
+  --main-font-name: Droid;
+}

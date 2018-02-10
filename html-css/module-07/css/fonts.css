@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Wisdom";
+  src: url("/module-07/fonts/Wisdom Script AI.ttf");
+}
+
+@font-face {
+  font-family: "Droid";
+  src: url("/module-07/fonts/Droid Serif Italic V1.ttf");
+  font-style: italic;
+}
