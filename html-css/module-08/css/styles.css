@@ -1,0 +1,306 @@
+@import url("reset.css");
+@import url("variables.css");
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: var(--default-body-color);
+}
+
+.container {
+    min-width: 320px;
+    margin: auto;
+}
+
+.master-header {
+    text-align: center;
+    height: 33.625rem;
+    background-image: url("../images/header-bg.png");
+    background-color: var(--default-body-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1.25rem;
+}
+
+.upper-panel {
+    margin-bottom: 2.5rem;
+}
+
+.tool-bar {
+    margin-bottom: 7.5rem;
+}
+
+.tool-bar-item {
+    display: inline-block;
+    padding: 0.6875rem 1rem 0.6875rem 1rem;
+    border: 0.125rem solid transparent;
+}
+
+.tool-bar-item>a {
+    display: block;
+    text-decoration: none;
+    color: var(--default-light-color);
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.tool-bar-item:hover {
+    border-color: var(--default-light-color);
+    border-radius: 1.25rem;
+}
+
+.tool-bar-item a::first-letter {
+    text-transform: uppercase;
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.87rem;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1.4375rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-family: var(--secondary-font-family);
+    color: var(--default-light-color);
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+.find-partner {
+    display: block;
+    width: 17.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    background-color: var(--default-link-color);
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+    border-radius: 3.1rem;
+    margin: auto;
+}
+
+.find-partner::first-letter {
+    text-transform: uppercase;
+}
+
+.main {
+    background-color: var(--default-light-color);
+    min-height: 75rem;
+    text-align: center;
+    padding: 4.3125rem 1.875rem 3.5625rem 1.875rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+    font-family: var(--main-font-family);
+    color: var(--default-body-color);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+h4::first-letter {
+    text-transform: capitalize;
+}
+
+.partner-list {
+    margin-bottom: 1.875rem;
+}
+
+.partner-list-item:not(:last-of-type) {
+    margin-bottom: 1.875rem;
+}
+
+.userpic {
+    position: relative;
+    margin-bottom: 1.375rem;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 100%;
+}
+
+.partner-1>svg {
+    background-color: #ff4e50;
+}
+
+.partner-2>svg {
+    background-color: #ffa507;
+}
+
+.partner-3>svg {
+    background-color: #1cd7ad;
+}
+
+.partner-4>svg {
+    background-color: #4e73db;
+}
+
+svg {
+    bottom: 0;
+    left: calc(50% + 2rem);
+    position: absolute;
+    fill: var(--default-light-color);
+    width: 2rem;
+    height: 2rem;
+    border: 0.125rem solid var(--default-light-color);
+    border-radius: 2rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-body-color);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 1.125rem;
+}
+
+span {
+    display: block;
+    font-size: 14px;
+    font-family: var(--secondary-font-family);
+    color: var(--light-font-color);
+    line-height: 1.2;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+span::first-letter {
+    text-transform: capitalize;
+}
+
+.other-partners {
+    display: block;
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-link-color);
+    font-weight: bold;
+    line-height: 2.5;
+    text-decoration: none;
+    width: 17.375rem;
+    height: 2.5rem;
+    border: 0.125rem solid var(--default-link-color);
+    border-radius: 3.5rem;
+    margin: auto;
+}
+
+.other-partners::first-letter {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+    .master-header {
+        min-height: 43.75rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .tool-bar {
+        order: 2;
+        margin-bottom: 0;
+    }
+    .logo {
+        padding-top: 0.6875rem;
+    }
+    .upper-panel {
+        padding-right: 1.75rem;
+        padding-left: 1.75rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+    h3 {
+        font-size: 3.25rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        margin-bottom: 2.3125rem;
+    }
+    p {
+        margin-bottom: 2.375rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .find-partner {
+        width: 14.375rem;
+    }
+    .main {
+        min-height: 46.125rem;
+        padding: 4.75rem 9.6875rem 2.5rem 9.6875rem;
+    }
+    .partner-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+    }
+    .partner-list-item {
+        flex: 0 0 50%
+    }
+    .partner-list-item:not(:nth-of-type(-n+2)) {
+        margin-bottom: 0;
+    }
+    .other-partners {
+        width: 11.875rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .master-header {
+        padding-top: 2.8125rem;
+    }
+    .upper-panel {
+        justify-content: space-around;
+        margin-bottom: 8rem;
+    }
+    h3 {
+        padding-left: 27rem;
+        padding-right: 27rem;
+        margin-bottom: 2.75rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+    .main {
+        min-height: 31.875rem;
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+    h4 {
+        margin-bottom: 2.375rem;
+    }
+    .partner-list-item:nth-of-type(n) {
+        flex: 0 0 25%;
+        margin-bottom: 0;
+    }
+}

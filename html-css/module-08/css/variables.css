@@ -1,0 +1,8 @@
+:root {
+    --default-body-color: #333333;
+    --default-light-color: #ffffff;
+    --light-font-color: #666666;
+    --main-font-family: "Montserrat";
+    --secondary-font-family: "Roboto";
+    --default-link-color: #ff4e50;
+}
