@@ -1,0 +1,259 @@
+@import url("../css/reset.css");
+@import url("../css/variables.css");
+@import url("../css/bootstrap-grid.css");
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: var(--default-body-color);
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+}
+
+.master-header {
+    text-align: center;
+    min-height: 33.625rem;
+    background-image: url("../images/header-bg.png");
+    background-color: var(--default-body-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1.25rem;
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+}
+
+.upper-panel {
+    margin-bottom: 2.5rem;
+}
+
+.tool-bar {
+    margin-bottom: 7.5rem;
+}
+
+.tool-bar-item {
+    display: inline-block;
+    padding: 0.6875rem 1rem 0.6875rem 1rem;
+    border: 0.125rem solid transparent;
+}
+
+.tool-bar-item>a {
+    display: block;
+    text-decoration: none;
+    color: var(--default-light-color);
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.tool-bar-item:hover {
+    border-color: var(--default-light-color);
+    border-radius: 1.25rem;
+}
+
+.tool-bar-item a::first-letter {
+    text-transform: uppercase;
+}
+
+.promo {
+    font-size: 1.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-family: var(--secondary-font-family);
+    color: var(--default-light-color);
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+.find-partner {
+    display: block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    background-color: var(--default-link-color);
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-light-color);
+    font-weight: bold;
+    border-radius: 3.1rem;
+    margin: auto;
+}
+
+.find-partner::first-letter {
+    text-transform: uppercase;
+}
+
+.main {
+    background-color: var(--default-light-color);
+    min-height: 75rem;
+    text-align: center;
+    padding-top: 4.625rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+    font-family: var(--main-font-family);
+    color: var(--default-body-color);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+h4::first-letter {
+    text-transform: capitalize;
+}
+
+.partner-list {
+    margin-bottom: 1.875rem;
+}
+
+.partner-list [class*="col-12"]:not(:last-child) {
+    margin-bottom: 1.875rem;
+}
+
+.userpic {
+    position: relative;
+    margin-bottom: 1.375rem;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 100%;
+}
+
+.partner-1>svg {
+    background-color: #ff4e50;
+}
+
+.partner-2>svg {
+    background-color: #ffa507;
+}
+
+.partner-3>svg {
+    background-color: #1cd7ad;
+}
+
+.partner-4>svg {
+    background-color: #4e73db;
+}
+
+svg {
+    bottom: 0;
+    left: calc(50% + 2rem);
+    position: absolute;
+    fill: var(--default-light-color);
+    width: 2rem;
+    height: 2rem;
+    border: 0.125rem solid var(--default-light-color);
+    border-radius: 2rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-body-color);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 1.125rem;
+}
+
+span {
+    display: block;
+    font-size: 14px;
+    font-family: var(--secondary-font-family);
+    color: var(--light-font-color);
+    line-height: 1.2;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+span::first-letter {
+    text-transform: capitalize;
+}
+
+.other-partners {
+    display: block;
+    font-size: 0.875rem;
+    font-family: var(--main-font-family);
+    color: var(--default-link-color);
+    font-weight: bold;
+    line-height: 2.5;
+    text-decoration: none;
+    height: 2.5rem;
+    border: 0.125rem solid var(--default-link-color);
+    border-radius: 3.5rem;
+    margin: auto;
+}
+
+.other-partners::first-letter {
+    text-transform: capitalize;
+}
+
+@media (min-width:748px) {
+    .logo {
+        margin-bottom: 0;
+    }
+    .tool-bar {
+        margin-bottom: 0;
+    }
+    .upper-panel {
+        margin-bottom: 6.5rem;
+    }
+    .promo {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+    .main {
+        min-height: 46.125rem;
+    }
+    .partner-list {
+        margin-bottom: 2.5rem;
+    }
+    .partner-list [class*="col-12"]:nth-child(n+3) {
+        margin-bottom: 0;
+    }
+    h4 {
+        margin-bottom: 2.25rem;
+    }
+}
+
+@media (min-width: 940px) {
+    .main {
+        min-height: 31rem;
+    }
+    .partner-list [class*="col-12"]:nth-child(n) {
+        margin-bottom: 0;
+    }
+}
