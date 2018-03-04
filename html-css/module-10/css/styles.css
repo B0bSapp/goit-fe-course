@@ -84,7 +84,7 @@ ul {
   display: flex;
 }
 
-.navigation__list-item {
+.navigation__link {
   display: block;
   font-size: 0.875rem;
   font-family: var(--main-header-font);
@@ -94,13 +94,14 @@ ul {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 0.125rem solid transparent;
+  text-decoration: none;
 }
 
 .navigation__list-item:not(:last-of-type) {
   margin-right: 3.4375rem;
 }
 
-.navigation__list-item:hover {
+.navigation__list-item:hover .navigation__link {
   color: var(--yellow-color);
   border-bottom-color: var(--yellow-color);
 }
@@ -196,6 +197,7 @@ ul {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  margin-top: 0;
 }
 
 .services-list__item {
@@ -251,6 +253,7 @@ ul {
   line-height: 1.6;
   text-align: center;
   margin-bottom: 5.9375rem;
+  margin-top: 0;
 }
 
 .team-list {
@@ -259,6 +262,7 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  margin-top: 0;
 }
 
 .team-list__img {
@@ -350,6 +354,7 @@ ul {
   line-height: 1.6;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 0;
 }
 
 .team-list__meta {
