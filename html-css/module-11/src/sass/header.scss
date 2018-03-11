@@ -1,0 +1,108 @@
+.header-wrapper {
+  min-height: 62.5rem;
+  background-image: linear-gradient(
+      to top,
+      rgba(color(yellow-color), 0.81) 0%,
+      rgba(color(pink-color), 0.81) 100%
+    ),
+    url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 2rem;
+}
+
+.master-header {
+  @include flex-organize(space-between, center);
+}
+
+.header-wrapper__master-header {
+  margin-bottom: 10.625rem;
+}
+
+.master-header__logo {
+  @include font-settings(
+    font(main-header-font),
+    color(default-white-color),
+    1.875rem
+  );
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.2;
+  min-width: 32rem;
+}
+
+.master-header__icon {
+  fill: color(default-white-color);
+}
+
+.navigation__list {
+  display: flex;
+
+  &-item:not(:last-of-type) {
+    margin-right: 3.4375rem;
+  }
+
+  &-item:hover .navigation__link {
+    color: color(yellow-color);
+    border-bottom-color: color(yellow-color);
+  }
+}
+
+.navigation__link {
+  display: block;
+  @include font-settings(
+    font(main-header-font),
+    color(default-white-color),
+    0.875rem
+  );
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.125rem solid transparent;
+  text-decoration: none;
+}
+
+.master-header__tool-bar {
+  display: flex;
+}
+
+.master-header__tool-item:not(:last-of-type) {
+  margin-right: 2.625rem;
+}
+
+.hero__secondary--big {
+  @extend .hero__secondary;
+  font-size: 4.5rem;
+  color: color(default-white-color);
+  margin-bottom: 4.125rem;
+}
+
+.hero__main--big {
+  @extend .hero__main;
+  font-size: 8rem;
+  color: color(default-white-color);
+  width: 45rem;
+  line-height: 0.933;
+  margin-bottom: 7.875rem;
+}
+
+.learn-more {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 2.5rem;
+  text-decoration: none;
+  @include font-settings(
+    font(main-header-font),
+    color(default-white-color),
+    0.875rem
+  );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.75;
+  text-align: center;
+  border: 0.125rem solid color(default-white-color);
+}

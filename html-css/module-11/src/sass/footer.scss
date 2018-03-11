@@ -1,0 +1,61 @@
+.master-footer {
+  @include flex-organize(space-between);
+  align-items: center;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
+}
+
+.master-footer__copyright {
+  @include font-settings(
+    font(main-header-font),
+    color(default-dark-color),
+    0.875rem
+  );
+  line-height: 1.2;
+
+  &::before {
+    content: "\00A9";
+  }
+}
+
+.master-footer__copyright--main {
+  @include font-settings(font(main-header-font), color(pink-color), 0.875rem);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.master-footer__e-mail {
+  outline: none;
+  border: 0.125rem solid color(light-grey-color);
+  height: 2.125rem;
+  width: 14.25rem;
+  padding-left: 0.8125rem;
+}
+
+input[placeholder="your email..."] {
+  font-size: 0.9375rem;
+  font-family: font(secondary-font);
+  color: color(light-grey-color);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.master-footer__button {
+  width: 9.375rem;
+  height: 2.5rem;
+  @include font-settings(
+    font(main-header-font),
+    color(default-white-color),
+    0.875rem
+  );
+  background-color: color(aqua-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -4px;
+}

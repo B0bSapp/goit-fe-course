@@ -1,0 +1,85 @@
+$colors: (
+  default-white-color: rgb(255, 255, 255),
+  default-dark-color: rgb(51, 51, 51),
+  light-dark-color: rgb(153, 153, 153),
+  light-grey-color: rgb(229, 229, 229),
+  yellow-color: rgb(252, 227, 138),
+  pink-color: rgb(243, 129, 129),
+  aqua-color: rgb(149, 225, 221)
+);
+
+$fonts: (
+  main-header-font: "Montserrat",
+  secondary-font: "Roboto",
+  twisted-font: "Kaushan Script"
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @return null;
+}
+
+@function font($key) {
+  @if map-has-key($fonts, $key) {
+    @return map-get($fonts, $key);
+  }
+  @return null;
+}
+
+@mixin flex-organize($justify-content: null, $align-items: null) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin font-settings($font-family, $color, $font-size) {
+  font-family: $font-family;
+  color: $color;
+  font-size: $font-size;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 75rem;
+  margin: auto;
+}
+
+.hero__main {
+  @include font-settings(
+    font(main-header-font),
+    color(default-dark-color),
+    1.875rem
+  );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2.625rem;
+}
+
+.hero__secondary {
+  @include font-settings(
+    font(twisted-font),
+    color(default-dark-color),
+    1.5rem
+  );
+  display: block;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.4375rem;
+}
